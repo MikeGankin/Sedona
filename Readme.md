@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Ганкин](https://up.htmlacademy.ru/adaptive/17/user/1035901).
-* Наставник: `Максим Пушкарев`.
+* Наставник: [Максим Пушкарев] (https://htmlacademy.ru/profile/id87167).
 
 ---
 
