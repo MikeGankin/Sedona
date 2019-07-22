@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Форма отзыва</title>
 </head>
 
 <body>
@@ -11,24 +11,25 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#">Главная</a>
+          <a class="main-nav__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="main-nav__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма отзыва</a>
+          <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
+      </ul>
     </nav>
-    <div class="page-header-wrapper">
+    <div class="page-header">
       <h1 class="visually-hidden">Седона</h1>
-      <a class="page-header-wrapper__logo">
-        <img class="page-header-wrapper__logo-image" src="http://placehold.it/110x223" width="226" height="30" alt="Город Седона»">
+      <a class="page-header__logo">
+        <img class="page-header__image" src="http://placehold.it/110x223" width="226" height="30" alt="Город Седона»">
       </a>
-      <button class="page-header-wrapper__menue-button" type="button" name="button"></button>
+      <button class="page-header__button" type="button" name="button"></button>
     </div>
   </header>
   <main>
@@ -37,60 +38,60 @@
       <img class="feedback__image" src="" alt="">
       <h3 class="feedback__label">оставьте свой отзыв</h3>
       <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <h3>Представьтесь</h3>
-        <p>
+      <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+        <h3 class="form__label">Представьтесь</h3>
+        <p class="form__area">
           <label for="name">Имя</label>
           <input type="text" name="name" id="name">
         </p>
-        <p>
+        <p class="form__area">
           <label for="surname">Фамилия</label>
           <input type="text" name="name" id="surname">
         </p>
-        <p>
+        <p class="form__area">
           <label for="middlename">Отчество</label>
           <input type="text" name="name" id="middlename">
         </p>
-        <h3>Контактная информация</h3>
-        <p>
+        <h3 class="form__label">Контактная информация</h3>
+        <p class="form__area">
           <label for="phone-number">Контактный телефон</label>
           <input type="text" name="number" id="phone-number">
         </p>
-        <p>
+        <p class="form__area">
           <label for="email">Электронная почта</label>
           <input type="text" name="email" id="email">
         </p>
-        <h3>Ваше общее впечатление</h3>
-        <p>
+        <h3 class="form__label">Ваше общее впечатление</h3>
+        <p class="form__area">
           <input type="radio" id="radio-1">
           <label for="radio-1">Скорее положительное</label>
         </p>
-        <p>
+        <p class="form__area">
           <input type="radio" id="radio-2">
           <label for="radio-2">Скорее отрицательное</label>
         </p>
-        <p>
+        <p class="form__area">
           <input type="radio" id="radio-3">
           <label for="radio-3">Затрудняюсь ответить</label>
         </p>
-        <h3>Посещенные достопримечательности</h3>
-        <p>
+        <h3 class="form__label">Посещенные достопримечательности</h3>
+        <p class="form__area">
           <input type="checkbox" id="check-1">
           <label for="check-1">Мост дьявола</label>
         </p>
-        <p>
+        <p class="form__area">
           <input type="checkbox" id="check-2">
           <label for="check-2">Гора-колокол</label>
         </p>
-        <p>
+        <p class="form__area">
           <input type="checkbox" id="check-3">
           <label for="check-3">Слайд-парк</label>
         </p>
-        <p>
+        <p class="form__area">
           <input type="checkbox" id="check-4">
           <label for="check-4">Красные скалы</label>
         </p>
-        <h3>Опишите свои эмоции:</h3>
+        <h3 class="form__label">Опишите свои эмоции:</h3>
         <input type="text" aria-label="Текст отзыва">
       </form>
     </section>
@@ -102,9 +103,9 @@
       <li class="site-list__item"><a href="#" aria-label="Фэйсбук"></a></li>
       <li class="site-list__item"><a href="#" aria-label="Ютуб"></a></li>
     </ul>
-    <div class="page-footer__create-by create-by">
-      <p class="create-by_description">Разработано</p>
-      <svg class="create-by__academy-logo"></svg>
+    <div class="page-footer__create-by">
+      <p class="page-footer__description">Разработано</p>
+      <svg class="page-footer__academy-logo"></svg>
     </div>
   </footer>
 </body>
