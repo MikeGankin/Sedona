@@ -5,14 +5,23 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  margin: 0 auto;
 }
 
-.welcome__image {
-  background-image: url("../img/text-sedona-index.svg");
-  margin-bottom: 40px;
+.welcome__wraper {
+  width: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome__slogan {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  width: 280px;
+  height: 209px;
 }
 
 .welcome__label {
@@ -24,9 +33,21 @@
   line-height: 26px;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
+  color: hsl(0, 0%, 0%);
   margin: 0;
+  padding-top: 47px;
   padding-bottom: 26px;
+  position: relative;
+}
+
+.welcome__label::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 26px;
+  top: -26px;
+  left: -15px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
 }
 
 .welcome__description {
@@ -36,4 +57,15 @@
   margin: 0;
   line-height: 26px;
   padding-bottom: 26px;
+  position: relative;
+}
+
+.welcome__description::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 37px;
+  top: 57px;
+  left: -21px;
+  background-image: url("../img/bg-triangle.svg");
 }
