@@ -1,55 +1,50 @@
-.advantages {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.blue__content {
-  background-color: hsl(202, 47%, 66%);
-  color: hsl(0, 0%, 100%);
+.profits__content {
+  background-color: #80b3d1;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.blue__title {
+.profits__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
   padding-top: 44px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
 }
 
-.blue__number {
+.profits__number {
   font-size: 14px;
-  line-height: 1.5;
-  color: hsl(0, 0%, 100%);
+  line-height: 26px;
+  color: #ffffff;
   margin: 0;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
-.blue__text {
+.profits__text {
   width: 295px;
   font-size: 14px;
   line-height: 26px;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   text-align: center;
   margin: 0;
   padding-bottom: 34px;
 }
 
-.blue__img {
+.profits__img {
   margin-bottom: -4px;
 }
 
-.icons {
+.thumbnails {
   list-style: none;
   text-align: left;
   width: 320px;
@@ -59,39 +54,39 @@
   padding: 0;
 }
 
-.icons li {
+.thumbnails li {
   width: 234px;
   padding-left: 69px;
   font-size: 14px;
 }
 
-.icons li:not(:last-child) {
+.thumbnails li:not(:last-child) {
   padding-bottom: 22px;
 }
 
-.icons__item--housing,
-.icons__item--souvenirs,
-.icons__item--food {
+.thumbnails__item--housing,
+.thumbnails__item--souvenirs,
+.thumbnails__item--food {
   position: relative;
 }
 
-.icons__item--food {
+.thumbnails__item--food {
   padding-bottom: 36px;
 }
 
-.icons__title {
+.thumbnails__title {
   font-size: 18px;
   padding-top: 6px;
   padding-bottom: 15px;
   margin: 0;
 }
 
-.icons__text {
+.thumbnails__text {
   font-size: 14px;
   margin: 0;
 }
 
-.icons__item--housing::before {
+.thumbnails__item--housing::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -101,7 +96,7 @@
   background-image: url("../img/icon-house.svg");
 }
 
-.icons__item--souvenirs::before {
+.thumbnails__item--souvenirs::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -111,7 +106,7 @@
   background-image: url("../img/icon-gift.svg");
 }
 
-.icons__item--food::before {
+.thumbnails__item--food::before {
   content: "";
   position: absolute;
   top: 0;

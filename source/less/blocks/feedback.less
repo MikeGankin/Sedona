@@ -1,23 +1,12 @@
 .feedback {
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
-
 }
 
 .feedback__form div {
   border-top: 1px solid #f2f2f2;
-  width: 320px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.form__area,
-.form__label {
-  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .feedback__wrapper {
@@ -26,6 +15,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 26px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback__slogan {
@@ -36,31 +40,21 @@
   left: 45px;
 }
 
-.feedback__form {
-  display: flex;
-  flex-direction: column;
-}
-
 .feedback__label {
   position: relative;
   font-size: 18px;
   line-height: 26px;
-}
-
-.feedback__label::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 26px;
-  top: -44px;
-  left: -47px;
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
 }
 
 .feedback__description {
   text-align: center;
   line-height: 26px;
   font-size: 14px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .form__label {
@@ -165,7 +159,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  top: -14px;
+  top: -18px;
   left: 0;
   background-color: #e6e6e6;
   border: 18px solid #e6e6e6;
@@ -202,8 +196,8 @@
   min-height: 160px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #e6e6e6;
   border: none;
   font-size: 16px;
