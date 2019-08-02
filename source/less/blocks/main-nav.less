@@ -1,6 +1,7 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-nav__list {
@@ -18,10 +19,6 @@
   margin: 0;
 }
 
-.main-nav__link:first-child {
-  position: relative;
-}
-
 .main-nav__link {
   display: inline-block;
   padding-top: 20px;
@@ -37,8 +34,8 @@
 
 .main-nav__close {
   position: absolute;
-  top: 18px;
-  right: 180px;
+  top: 17px;
+  right: 30px;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -50,7 +47,7 @@
     width: 27px;
     height: 5px;
     content: "";
-    background-color: red;
+    background-color: #ffffff;
     transform: rotate(-45deg);
   }
 
@@ -61,26 +58,7 @@
     width: 27px;
     height: 5px;
     content: "";
-    background-color: red;
+    background-color: #ffffff;
     transform: rotate(45deg);
   }
-}
-
-.header-wrapper {
-  max-height: 56px;
-  background-color: #ffffff;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  z-index: 1;
-}
-
-.page-header__button {
-  background: transparent;
-  position: absolute;
-  top: 15px;
-  right: 13px;
-  border: none;
-  fill: #80b3d1;
 }
