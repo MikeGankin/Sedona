@@ -1,10 +1,14 @@
 .profits__content {
   background-color: #80b3d1;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+}
+
+@media (min-width: @tablet-width) {
+  .profits__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .profits__title {
@@ -12,11 +16,14 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center;
-  padding-top: 44px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 44px 20px 10px 20px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .profits__title {
+    font-size: 21px;
+  }
 }
 
 .profits__number {
@@ -24,9 +31,7 @@
   line-height: 26px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 10px 20px;
   text-align: center;
 }
 
@@ -37,7 +42,7 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding-bottom: 34px;
+  padding: 0 20px 34px 20px;
 }
 
 .profits__img {
@@ -52,6 +57,21 @@
   margin-top: 31px;
   margin-bottom: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .thumbnails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+  }
+
+  .thumbnails li {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .thumbnails li {
