@@ -1,13 +1,32 @@
-.profits__content {
+.profits {
+  max-height: 498px;
   background-color: #80b3d1;
   color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
+  .profits {
+    max-height: 256px;
+  }
+
   .profits__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .profits__content--bridge {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .profits__conteiner {
+    width: 33%;
+  }
+
+  .profits__img {
+    width: 67%;
   }
 }
 
@@ -16,13 +35,16 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center;
-  padding: 44px 20px 10px 20px;
+  padding-top: 60px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .profits__title {
     font-size: 21px;
+    width: 62%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -30,74 +52,46 @@
   font-size: 14px;
   line-height: 26px;
   color: #ffffff;
-  margin: 0;
-  padding: 0 20px 10px 20px;
   text-align: center;
 }
 
 .profits__text {
-  width: 295px;
   font-size: 14px;
   line-height: 26px;
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding: 0 20px 34px 20px;
-}
-
-.profits__img {
-  margin-bottom: -4px;
-}
-
-.thumbnails {
-  list-style: none;
-  text-align: left;
-  width: 320px;
-  line-height: 22px;
-  margin-top: 31px;
-  margin-bottom: 0;
-  padding: 0;
+  padding-bottom: 46px;
 }
 
 @media (min-width: @tablet-width) {
-  .thumbnails {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    text-align: center;
-  }
-
-  .thumbnails li {
-    padding-left: 50px;
-    padding-right: 50px;
+  .profits__text {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0
   }
 }
 
-.thumbnails li {
+.thumbnails {
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.thumbnails__item {
   width: 234px;
   padding-left: 69px;
+  padding-top: 41px;
   font-size: 14px;
-}
-
-.thumbnails li:not(:last-child) {
-  padding-bottom: 22px;
-}
-
-.thumbnails__item--housing,
-.thumbnails__item--souvenirs,
-.thumbnails__item--food {
-  position: relative;
-}
-
-.thumbnails__item--food {
-  padding-bottom: 36px;
 }
 
 .thumbnails__title {
   font-size: 18px;
-  padding-top: 6px;
-  padding-bottom: 15px;
+  padding-top: 0;
+  padding-bottom: 26px;
   margin: 0;
 }
 
@@ -106,32 +100,93 @@
   margin: 0;
 }
 
-.thumbnails__item--housing::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 21px;
-  width: 38px;
-  height: 36px;
-  background-image: url("../img/icon-house.svg");
+@media (min-width: @tablet-width) {
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 330px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .thumbnails__item {
+    width: 33%;
+    padding-top: 160px;
+    padding-left: 0;
+  }
 }
 
-.thumbnails__item--souvenirs::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 25px;
-  width: 32px;
-  height: 38px;
-  background-image: url("../img/icon-gift.svg");
+.thumbnails__item--housing {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 21px;
+    width: 38px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+  }
 }
 
-.thumbnails__item--food::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 19px;
-  width: 39px;
-  height: 34px;
-  background-image: url("../img/icon-burger.svg");
+.thumbnails__item--souvenirs {
+  position: relative;
+  padding-bottom: 41px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.thumbnails__item--food {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .thumbnails__item--souvenirs {
+    padding-bottom: 0;
+  }
+
+  .thumbnails__item--housing::before {
+    top: 40px;
+    left: 87px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .thumbnails__item--souvenirs::before {
+    top: 40px;
+    left: 90px;
+    width: 64px;
+    height: 75px;
+  }
+
+  .thumbnails__item--food::before {
+    top: 46px;
+    left: 85px;
+    width: 77px;
+    height: 68px;
+  }
 }

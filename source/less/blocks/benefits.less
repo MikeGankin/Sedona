@@ -3,55 +3,46 @@
   margin: 0;
   padding: 0;
   background-color: #ededed;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .benefits {
     display: flex;
+    justify-content: space-between;
+    max-height: 256px;
   }
 }
 
 .benefits__title {
+  width: auto;
   font-size: 18px;
-  padding-top: 33px;
-  padding-bottom: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
   margin: 0;
+  padding: 33px 0 13px 0;
 }
 
 @media (min-width: @tablet-width) {
   .benefits__title {
+    width: 50%;
     font-size: 21px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0 auto;
   }
 }
 
 .benefits__text {
   font-size: 14px;
-  padding-bottom: 33px;
-  padding-top: 10px;
-  margin: 0;
   line-height: 26px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: @tablet-width) {
-  .benefits__text {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
+  margin: 0;
+  width: 100%;
+  padding-bottom: 33px;
 }
 
 .benefits__number {
   margin: 0;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 0 30px 0;
 }
 
 .benefits__item:nth-child(2) {
@@ -62,5 +53,9 @@
 @media (min-width: @tablet-width) {
   .benefits__item:nth-child(2) {
     border-style: none;
+  }
+
+  .benefits__item {
+    width: 33%;
   }
 }

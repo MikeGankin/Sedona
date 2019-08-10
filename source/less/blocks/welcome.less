@@ -1,29 +1,71 @@
 .welcome__wraper {
+  width: 100%;
+  min-height: 390px;
+  margin-bottom: 30px;
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   &::after {
     content: "";
     position: absolute;
     width: 320px;
     height: 26px;
-    bottom: 0;
-    left: 0;
+    bottom: 8px;
+    left: 6px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__wraper::after {
+    width: 768px;
+    height: 57px;
+    bottom: 8px;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .welcome__wraper::after {
+    width: 1200px;
+    height: 57px;
+    bottom: 8px;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-desctop.svg");
+  }
+}
+
+.welcome__image {
+  margin-left: -70%;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__image {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .welcome__image {
+    margin: 0;
   }
 }
 
 .welcome__slogan {
   position: absolute;
-  top: 90px;
+  top: 20px;
   left: 20px;
-  width: 280px;
-  height: 209px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__slogan {
+    top: 20%;
+    left: 5%;
+  }
+
+  .welcome__image {
+    margin: 0;
+  }
 }
 
 .welcome__label {
@@ -33,7 +75,6 @@
   text-align: center;
   color: #000000;
   margin: 0;
-  padding-top: 47px;
   padding-bottom: 26px;
   position: relative;
 }
@@ -41,6 +82,8 @@
 @media (min-width: @tablet-width) {
   .welcome__label {
     font-size: 26px;
+    width: 71%;
+    margin: 0 auto;
   }
 }
 
@@ -49,11 +92,18 @@
   color: #000000;
   margin: 0;
   line-height: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 35px;
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__description {
+    width: 76%;
+    margin: 0 auto;
+  }
 }
 
 .advantages {

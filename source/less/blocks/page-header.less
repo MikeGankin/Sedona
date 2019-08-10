@@ -1,4 +1,5 @@
 .page-header {
+  width: 100%;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
@@ -14,36 +15,21 @@
 }
 
 .header-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  max-height: 56px;
-  background-color: #ffffff;
+  max-height: 57px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.page-header__logo {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
   .header-wrapper {
-    max-width: 102px;
-  }
-}
-
-.page-header__button {
-  background: transparent;
-  position: absolute;
-  top: 15px;
-  right: 0;
-  padding-left: 0;
-  padding-right: 20px;
-  border: none;
-  fill: #80b3d1;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__button {
-    display: none;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 40%;
   }
 }

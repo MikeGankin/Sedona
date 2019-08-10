@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,48 +13,50 @@
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__close" type="button" name="button"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
             <a class="main-nav__link" href="#">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="nav-list__item">
             <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="nav-list__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="nav-list__item">
             <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
-          <li class="site-list__item">
-            <div class="header-wrapper">
-              <h1 class="visually-hidden">Седона</h1>
-              <a class="page-header__logo">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="83" viewBox="0 0 102 83">
-                  <image id="logotyle-mobile.svg" width="102" height="83"
-                    xlink:href="data:img/png;base64,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" />
-                </svg>
-              </a>
-              <button class="page-header__button" type="button" name="button">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
-                  xml:space="preserve">
-                  <g>
-                    <rect width="22.928" height="3.964" />
-                    <rect y="9.009" width="22.928" height="3.964" />
-                    <rect y="18.018" width="22.928" height="3.964" />
-                  </g>
-                </svg>
-              </button>
-            </div>
-          </li>
         </ul>
+        <button class="main-nav__open" type="button" name="button">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
+            xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964" />
+              <rect y="9.009" width="22.928" height="3.964" />
+              <rect y="18.018" width="22.928" height="3.964" />
+            </g>
+          </svg>
+        </button>
       </nav>
+      <div class="header-wrapper">
+          <h1 class="visually-hidden">Седона</h1>
+          <a class="page-header__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="83" viewBox="0 0 102 83">
+              <image id="logotyle-mobile.svg" width="102" height="83"
+                xlink:href="data:img/png;base64,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" />
+            </svg>
+          </a>
+        </div>
     </header>
     <main>
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седона</h2>
         <div class="welcome__wraper">
-          <img class="welcome__image" src="img/bg-back-mobile@1x.jpg" width="786px" height="389px" alt="Город Седона»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg" alt="Город Седона»">
+            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg" alt="Город Седона»">
+            <img class="welcome__image" src="img/bg-back-mobile@1x.jpg" alt="Город Седона»">
+          </picture>
           <svg class="welcome__slogan" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="350.074px" viewBox="0 0 459.754 350.074"
             enable-background="new 0 0 459.754 350.074" xml:space="preserve">
             <g>
@@ -128,7 +129,11 @@
               <p class="profits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="profits__img">
-              <img src="img/main-city-mobile@1x.jpg" width="320px" height="260px" alt="Картинка отеля">
+              <picture>
+                <source srcset="img/main-city-desctop@1x.jpg" media="(min-width: 1200px)" alt="Картинка отеля">
+                <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)" alt="Картинка отеля">
+                <img src="img/main-city-mobile@1x.jpg" alt="Картинка отеля">
+              </picture>
             </div>
           </div>
         </div>
@@ -137,24 +142,28 @@
             <h3 class="thumbnails__title">Жилье</h3>
             <p class="thumbnails__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="thumbnails__item thumbnails__item--souvenirs">
-            <h3 class="thumbnails__title">Сувениры</h3>
-            <p class="thumbnails__text">Не только китайского, но и местного производства!</p>
-          </li>
           <li class="thumbnails__item thumbnails__item--food">
             <h3 class="thumbnails__title">Еда</h3>
             <p class="thumbnails__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
+          <li class="thumbnails__item thumbnails__item--souvenirs">
+            <h3 class="thumbnails__title">Сувениры</h3>
+            <p class="thumbnails__text">Не только китайского, но и местного производства!</p>
+          </li>
         </ul>
         <div class="profits">
-          <div class="profits__content">
+          <div class="profits__content profits__content--bridge">
             <div class="profits__conteiner">
               <h3 class="profits__title">Там есть мост дьявола</h3>
               <p class="profits__number">- №2 -</p>
               <p class="profits__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="profits__img">
-              <img src="img/photo-bridge-mobile@1x.jpg" width="320px" height="260px" alt="Картинка моста дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg" alt="Город Седона»">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg" alt="Город Седона»">
+                <img src="img/main-bridge-mobile@1x.jpg" alt="Город Седона»">
+              </picture>
             </div>
           </div>
         </div>
@@ -183,14 +192,17 @@
         <a class="find-hotel__link" href="#" aria-label="Ссылка на отели">Найти гостиницу</a>
       </section>
       <div class="map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320px" height="350px" alt="Карта штата Аризона">
+        <picture>
+          <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 768px)" width="768px" height="350px">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320px" height="350px" alt="Карта штата Аризона">
+        </picture>
       </div>
     </main>
     <footer class="page-footer">
       <h3 class="page-footer__label">#visitsedona</h3>
-      <ul class="page-footer__social-links site-list">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--twitter " href="#" aria-label="Твиттер">
+      <ul class="page-footer__social-links footer-list">
+        <li class="footer-list__item">
+          <a class="footer-list__link footer-list__link--twitter " href="#" aria-label="Твиттер">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
               xml:space="preserve">
               <g id="W6EeEF_1_">
@@ -202,8 +214,8 @@
             </svg>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--facebook" href="#" aria-label="Фэйсбук">
+        <li class="footer-list__item">
+          <a class="footer-list__link footer-list__link--facebook" href="#" aria-label="Фэйсбук">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
               xml:space="preserve">
               <path fill="hsl(0, 0%, 100%)"
@@ -211,8 +223,8 @@
             </svg>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--youtube" href="#" aria-label="Ютуб">
+        <li class="footer-list__item">
+          <a class="footer-list__link footer-list__link--youtube" href="#" aria-label="Ютуб">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
               xml:space="preserve">
               <path fill="hsl(0, 0%, 100%)" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />

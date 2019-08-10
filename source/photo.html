@@ -15,7 +15,7 @@
         <button class="main-nav__close" type="button" name="button"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="main-nav__link" href="photo.html">Фото и видео</a>
@@ -73,30 +73,50 @@
         <h2 class="visually-hidden">Галлерея</h2>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg" width="280px" height="280px" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+              <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg" alt="Закат солнца">
+            </picture>
             <div class="photo-gallery__wrapper">
               <h3 class="photo-gallery__label">Неродные просторы</h3>
               <p class="photo-gallery__autor">Автор фото: Борис</p>
+            </div>
+            <div class="photo-gallery__wrapper">
               <p class="photo-gallery__likes">1350</p>
             </div>
           </li>
           <li class="photo-gallery__item">
             <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg" width="280px" height="280px" alt="">
-            <h3 class="photo-gallery__label">Местная растительность</h3>
-            <p class="photo-gallery__autor">Автор фото: Сергей</p>
-            <p class="photo-gallery__likes">143</p>
+            <div class="photo-gallery__wrapper">
+              <h3 class="photo-gallery__label">Местная растительность</h3>
+              <p class="photo-gallery__autor">Автор фото: Сергей</p>
+            </div>
+            <div class="photo-gallery__wrapper">
+              <p class="photo-gallery__likes">143</p>
+            </div>
           </li>
           <li class="photo-gallery__item">
             <img class="photo-gallery__image" src="img/photo-roads-mobile@1x.jpg" width="280px" height="280px" alt="">
-            <h3 class="photo-gallery__label">Дорога на север</h3>
-            <p class="photo-gallery__autor">Автор фото: Петр</p>
-            <p class="photo-gallery__likes">96</p>
+            <div class="photo-gallery__wrapper">
+              <h3 class="photo-gallery__label">Дорога на север</h3>
+              <p class="photo-gallery__autor">Автор фото: Петр</p>
+            </div>
+            <div class="photo-gallery__wrapper">
+              <p class="photo-gallery__likes">96</p>
+            </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg" width="280px" height="280px" alt="">
-            <h3 class="photo-gallery__label">Мост дьявола</h3>
-            <p class="photo-gallery__autor">Автор фото: Антон</p>
-            <p class="photo-gallery__likes">254</p>
+            <picture>
+              <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg" width="280px" height="280px" alt="">
+            </picture>
+            <div class="photo-gallery__wrapper">
+              <h3 class="photo-gallery__label">Мост дьявола</h3>
+              <p class="photo-gallery__autor">Автор фото: Антон</p>
+            </div>
+            <div class="photo-gallery__wrapper">
+              <p class="photo-gallery__likes">254</p>
+            </div>
           </li>
         </ul>
       </section>
