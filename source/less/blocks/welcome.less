@@ -19,48 +19,34 @@
   .welcome__wraper::after {
     width: 768px;
     height: 57px;
-    bottom: 8px;
+    bottom: 7px;
     left: 0;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 }
 
-@media (min-width: @desctop-width) {
-  .welcome__wraper::after {
-    width: 1200px;
-    height: 57px;
-    bottom: 8px;
-    left: 0;
-    background-image: url("../img/bg-intro-triangle-desctop.svg");
-  }
-}
-
 .welcome__image {
-  margin-left: -70%;
+  margin-left: -80%;
 }
 
 @media (min-width: @tablet-width) {
-  .welcome__image {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desctop-width) {
   .welcome__image {
     margin: 0;
   }
 }
 
 .welcome__slogan {
+  width: 280px;
   position: absolute;
-  top: 20px;
+  top: 80px;
   left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__slogan {
-    top: 20%;
-    left: 5%;
+    width: 61%;
+    top: 80px;
+    left: 150px;
   }
 
   .welcome__image {

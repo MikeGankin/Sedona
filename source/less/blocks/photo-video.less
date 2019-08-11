@@ -1,53 +1,99 @@
-.photo-video__wrapper {
+.photo-video__wraper {
   width: 100%;
+  min-height: 390px;
+  margin-bottom: 30px;
   position: relative;
 
-  &::before {
-   content: "";
-   position: absolute;
-   width: 320px;
-   height: 26px;
-   bottom: 0;
-   left: 0;
-   background-image: url("../img/bg-intro-triangle-mobile.svg");
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 26px;
+    bottom: 8px;
+    left: 6px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-video__wraper::after {
+    width: 768px;
+    height: 57px;
+    bottom: 7px;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .photo-gallery {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+}
+
+.photo-video__image {
+  margin-left: -80%;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-video__image {
+    margin: 0;
   }
 }
 
 .photo-video__slogan {
+  width: 280px;
   position: absolute;
-  width: 230px;
-  height: 40px;
-  top: 53px;
-  left: 45px;
+  top: 80px;
+  left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-video__slogan {
+    width: 61%;
+    top: 80px;
+    left: 150px;
+  }
+
+  .photo-video__image {
+    margin: 0;
+  }
 }
 
 .photo-video__label {
   font-size: 18px;
+  font-weight: bold;
   line-height: 26px;
-  margin-top: 45px;
-  margin-bottom: 40px;
-  position: relative;
   text-align: center;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 26px;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .photo-video__label {
-    font-size: 30px;
+    font-size: 26px;
+    width: 71%;
+    margin: 0 auto;
   }
 }
 
 .photo-video__description {
   font-size: 14px;
+  color: #000000;
+  margin: 0;
   line-height: 26px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 36px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-video__description {
-    max-width: 440px;
-    margin: 0 auto 20px auto;
+    width: 76%;
+    margin: 0 auto;
   }
 }
 
@@ -67,11 +113,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .photo-gallery__item {
   border-top: 1px solid #e5e5e5;
+}
+
+.photo-gallery__wrapper {
+  padding: 0 17px 0 17px;
 }
 
 .photo-gallery__label {
@@ -87,8 +138,13 @@
 }
 
 .photo-gallery__image {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding: 23px 0 23px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-gallery__image {
+    padding: 0 0 23px 0;
+  }
 }
 
 .photo-gallery__autor {
