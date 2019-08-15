@@ -15,9 +15,8 @@
   font-size: 21px;
   line-height: 1.24;
   color: #000000;
-  padding-top: 41px;
-  padding-bottom: 41px;
-  margin: 0;
+  padding: 0;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -26,8 +25,13 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
+}
+@media (min-width: @tablet-width) {
+  .page-footer__social-links {
+    margin: 0;
+  }
 }
 
 .page-footer__social-links a {
@@ -65,7 +69,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
 }
 @media (min-width: @tablet-width) {
   .page-footer__create-by {
@@ -77,6 +80,10 @@
   font-size: 14px;
   line-height: 1.86;
   color: #000000;
+  padding: 0;
+  margin: 0 11px 0 0;
+}
+
+.page-footer__academy-logo {
   margin: 0;
-  padding-right: 11px;
 }

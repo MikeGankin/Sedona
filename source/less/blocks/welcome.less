@@ -1,56 +1,69 @@
-.welcome__wraper {
+.main-picture__wraper {
   width: 100%;
   min-height: 390px;
   margin-bottom: 30px;
   position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 
   &::after {
     content: "";
     position: absolute;
     width: 320px;
-    height: 26px;
-    bottom: 8px;
-    left: 6px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .welcome__wraper::after {
-    width: 768px;
-    height: 57px;
-    bottom: 7px;
+    height: 27px;
+    bottom: 1px;
     left: 0;
-    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
   }
 }
-
-.welcome__image {
-  margin-left: -80%;
-}
-
 @media (min-width: @tablet-width) {
-  .welcome__image {
-    margin: 0;
+  .main-picture__wraper {
+    min-height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &::after {
+      width: 768px;
+      height: 57px;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-picture__wraper {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &::after {
+      width: 1200px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 }
 
-.welcome__slogan {
+.main-picture__slogan {
   width: 280px;
+  height: 214px;
   position: absolute;
-  top: 80px;
-  left: 20px;
+  top: 24%;
+  left: 7%;
 }
-
 @media (min-width: @tablet-width) {
-  .welcome__slogan {
-    width: 61%;
-    top: 80px;
-    left: 150px;
+  .main-picture__slogan {
+    width: 460px;
+    height: 350px;
+    top: 15%;
+    left: 21%;
   }
 
-  .welcome__image {
+  .main-picture__image {
     margin: 0;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-picture__slogan {
+    left: 31%;
   }
 }
 
@@ -64,12 +77,15 @@
   padding-bottom: 26px;
   position: relative;
 }
-
 @media (min-width: @tablet-width) {
   .welcome__label {
-    font-size: 26px;
-    width: 71%;
-    margin: 0 auto;
+    padding: 0 116px 26px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .welcome__label {
+    padding: 0 288px 26px;
+    font-size: 21px;
   }
 }
 
@@ -84,7 +100,6 @@
   position: relative;
   text-align: center;
 }
-
 @media (min-width: @tablet-width) {
   .welcome__description {
     width: 76%;
@@ -105,7 +120,6 @@
     background-image: url("../img/bg-triangle.svg");
   }
 }
-
 @media (min-width: @tablet-width) {
   .advantages::before {
     display: none;

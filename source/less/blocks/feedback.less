@@ -1,9 +1,12 @@
-.feedback {
-  width: 100%;
+.feedback__form {
+  width: 280px;
   margin: 0 auto;
 }
 @media (min-width: @tablet-width) {
-  .feedback {
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 85%;
   }
 }
@@ -31,33 +34,23 @@
   color: #000000;
   margin: 0;
   line-height: 26px;
-  padding-bottom: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 35px;
   position: relative;
   text-align: center;
 }
 @media (min-width: @tablet-width) {
   .feedback__description {
-    width: 76%;
-    margin: 0 auto;
+    padding: 0 104px 35px;
   }
 }
 
-.feedback__form div {
+.form__wrapper {
   border-top: 1px solid #f2f2f2;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 @media (min-width: @tablet-width) {
-  .feedback__form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .form__wrapper--introduce {
     order: 2;
+    width: 42%;
   }
 
   .form__wrapper--contacts {
@@ -68,15 +61,16 @@
   .form__wrapper--impressions {
     order: 1;
     position: relative;
+    width: 42%;
 
     &::after {
-      content: "";
       position: absolute;
+      content: "";
       width: 1px;
-      height: 292px;
+      height: 290px;
       top: 60px;
-      right: -80px;
-      background-color: #dadada;
+      right: -60px;
+      background-color: #dbdbdb;
     }
   }
 
@@ -113,10 +107,6 @@
   }
 }
 
-.form__wrapper--emotions {
-  margin-bottom: 10px;
-}
-
 .feedback__slogan {
   position: absolute;
   width: 229px;
@@ -134,19 +124,11 @@
   text-align: center;
 }
 
-.feedback__description {
-  text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .form__label {
   text-align: center;
   font-size: 18px;
   margin-top: 26px;
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 @media (min-width: @tablet-width) {
   .form__label {
@@ -155,14 +137,21 @@
     font-size: 21px;
     position: relative;
 
-    &::before {
+    .form__label--information::before {
       content: "";
       position: absolute;
       width: 648px;
       height: 1px;
-      top: 12px;
+      top: 0;
       left: 0;
       background-color: #d6d6d6;
+    }
+
+    span {
+      background-color: #ffffff;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
     }
   }
 
@@ -171,11 +160,12 @@
   }
 
   .form__label--emotions {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   .form__label--information {
     position: relative;
+    margin-bottom: 30px;
   }
 }
 
@@ -238,18 +228,14 @@
   flex-direction: column;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form__area--mail label,
 .form__area--phone label {
   padding-left: 22px;
   padding-bottom: 15px;
-}
-@media (min-width: @tablet-width) {
-  .form__area--phone {
-    padding-top: 40px;
-  }
+  font-size: 14px;
 }
 
 .form__area--phone::before {
@@ -257,7 +243,7 @@
   position: absolute;
   width: 59px;
   height: 58px;
-  top: 82px;
+  top: 42px;
   right: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-phone.svg");
@@ -346,7 +332,6 @@
     text-align: left;
     padding-bottom: 50px;
   }
-
 }
 @media (min-width: @tablet-width) {
   .checkbox__wrapper {
@@ -354,20 +339,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    margin: 0 auto;
+    width: 460px;
+    margin: 0 auto 20px;
   }
 }
 
 .text__input {
-  width: 100%;
-  min-height: 160px;
+  max-width: 280px;
+  max-height: 160px;
   padding: 10px 20px;
   background-color: #e6e6e6;
   border: none;
   font-size: 16px;
   font-weight: bold;
   box-sizing: border-box;
+  resize: none;
+}
+@media (min-width: @tablet-width) {
+  .text__input {
+    max-width: 648px;
+    max-height: 160px;
+  }
 }
 
 .form__submit {
@@ -383,5 +375,30 @@
 @media (min-width: @tablet-width) {
   .form__submit {
     width: 324px;
+  }
+
+  .form__wrapper--submit {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 98px;
+  }
+}
+
+.form__description {
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .form__description {
+    display: block;
+    font-size: 14px;
+  }
+}
+
+.form__area--text {
+  margin: 10px 0;
+}
+@media (min-width: @tablet-width) {
+  .form__area--text {
+    margin: 0 0 50px;
   }
 }

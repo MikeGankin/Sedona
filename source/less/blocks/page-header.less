@@ -17,17 +17,24 @@
   max-height: 57px;
   background-color: transparent;
   text-align: center;
-}
-
-.page-header__logo {
   position: relative;
   z-index: 1;
 }
 @media (min-width: @tablet-width) {
   .header-wrapper {
-    width: 20%;
     position: absolute;
     top: 0;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+@media (min-width: @desktop-width) {
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 }

@@ -1,7 +1,7 @@
 body {
   width: auto;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -15,10 +15,14 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
 }
-
 @media (min-width: @tablet-width) {
   .container {
     width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -34,14 +38,12 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 @font-face {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
   src: url("fonts/PTSans.woff2") format("woff2"), url("fonts/PTSans.woff") format("woff");
 }
-
 @font-face {
   font-weight: bold;
   font-family: "PT Sans Narrow";
