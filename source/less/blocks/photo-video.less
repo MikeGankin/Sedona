@@ -95,6 +95,15 @@
   border-top: 1px solid #e5e5e5;
   padding: 0 20px;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.photo-gallery__like {
+  display: flex;
+}
+
+.photo-gallery__count {
+  padding-left: 12px;
 }
 @media (min-width: @tablet-width) {
   .photo-gallery__list {
@@ -104,6 +113,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .photo-gallery__like {
+    display: flex;
+  }
+
+  .photo-gallery__count {
+    padding-left: 12px;
   }
 
   .photo-gallery__item {
@@ -120,15 +137,69 @@
     background-color: #eaeaea;
   }
 
+  .photo-gallery__picture--main {
+    height: 400px;
+  }
+
+  .photo-gallery__picture {
+    height: 267px;
+  }
+
   .photo-gallery__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    height: 80px;
+  }
+
+  .photo-gallery__wrapper div {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .photo-gallery__list {
+    width: 100%;
+  }
+
+  .photo-gallery__item {
+    position: relative;
+  }
+
+  .photo-gallery__item:not(:first-child) {
+    width: 33%;
+  }
+
+  .photo-gallery__wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0px;
+    color: #ffffff;
+  }
+
+  .photo-gallery__picture {
+    height: 400px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .photo-gallery__like {
+    display: flex;
+  }
+
+  .photo-gallery__like svg {
+    fill: #ffffff;
+  }
+
+  .photo-gallery__count {
+    padding-left: 12px;
   }
 }
 
 .photo-gallery__label {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   padding-bottom: 10px;
   text-align: left;
@@ -202,8 +273,18 @@
   text-align: center;
 }
 
-.video-gallery__video {
+.video-gallery__wrapper {
   background-color: #e5e5e5;
-  padding-left: 20px;
   width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: @tablet-width) {
+  .video-gallery__wrapper {
+    width: 85%;
+  }
+}
+@media (min-width: @desktop-width) {
+  .video-gallery__wrapper {
+    width: 65%;
+  }
 }

@@ -4,10 +4,6 @@
   color: #ffffff;
 }
 @media (min-width: @tablet-width), and (min-width: @desktop-width)  {
-  .profits {
-    max-height: 256px;
-  }
-
   .profits__content {
     display: flex;
     align-items: center;
@@ -15,7 +11,11 @@
   }
 
   .profits__conteiner {
-    width: 33%;
+    width: 34%;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .profits__content--bridge {
@@ -23,10 +23,10 @@
   }
 
   .profits__img {
+    height: 256px;
     width: 66%;
   }
 }
-
 
 .profits__title {
   font-size: 18px;
@@ -40,7 +40,7 @@
   .profits__title {
     font-size: 21px;
     margin: 0;
-    padding: 0 19px;
+    padding: 0 23px;
   }
 }
 
@@ -60,12 +60,6 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
-}
-@media (min-width: @tablet-width) {
-  .profits__text {
-    margin: 0;
-    padding: 0 32px;
-  }
 }
 
 .thumbnails {
@@ -101,7 +95,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 330px;
+    height: 330px;
     margin: 0;
     text-align: center;
   }
@@ -174,28 +168,31 @@
     background-repeat: no-repeat;
   }
 }
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width), and (min-width: @desktop-width)  {
   .thumbnails__item--souvenirs {
     padding-bottom: 0;
   }
 
   .thumbnails__item--housing::before {
     top: 40px;
-    left: 87px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 75px;
     height: 72px;
   }
 
   .thumbnails__item--souvenirs::before {
     top: 40px;
-    left: 90px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 64px;
     height: 75px;
   }
 
   .thumbnails__item--food::before {
     top: 46px;
-    left: 85px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 77px;
     height: 68px;
   }
