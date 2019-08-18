@@ -10,16 +10,23 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
 }
+
 @media (min-width: @tablet-width) {
   .container {
     width: 768px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .container {
     width: 1200px;
@@ -38,12 +45,14 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 @font-face {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
   src: url("fonts/PTSans.woff2") format("woff2"), url("fonts/PTSans.woff") format("woff");
 }
+
 @font-face {
   font-weight: bold;
   font-family: "PT Sans Narrow";

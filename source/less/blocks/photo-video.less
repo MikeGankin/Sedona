@@ -14,6 +14,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
   }
 }
+
 @media (min-width: @tablet-width) {
   .photo-video__wraper::after {
     width: 768px;
@@ -27,6 +28,7 @@
 .photo-video__image {
   margin-left: -80%;
 }
+
 @media (min-width: @tablet-width) {
   .photo-video__image {
     margin: 0;
@@ -39,6 +41,7 @@
   top: 80px;
   left: 20px;
 }
+
 @media (min-width: @tablet-width) {
   .photo-video__slogan {
     width: 61%;
@@ -61,6 +64,7 @@
   padding-bottom: 26px;
   position: relative;
 }
+
 @media (min-width: @tablet-width) {
   .photo-video__label {
     font-size: 26px;
@@ -78,6 +82,7 @@
   position: relative;
   text-align: center;
 }
+
 @media (min-width: @tablet-width) {
   .photo-video__description {
     padding: 0 161px 35px;
@@ -105,6 +110,7 @@
 .photo-gallery__count {
   padding-left: 12px;
 }
+
 @media (min-width: @tablet-width) {
   .photo-gallery__list {
     background-color: #ffffff;
@@ -137,19 +143,19 @@
     background-color: #eaeaea;
   }
 
-  .photo-gallery__picture--main {
-    height: 400px;
+  .photo-gallery__picture {
+    max-height: 267px;
   }
 
-  .photo-gallery__picture {
-    height: 267px;
+  .photo-gallery__picture--big {
+    max-height: 400px;
   }
 
   .photo-gallery__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    height: 80px;
+    max-height: 80px;
   }
 
   .photo-gallery__wrapper div {
@@ -157,6 +163,7 @@
     font-size: 14px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .photo-gallery__list {
     width: 100%;
@@ -180,7 +187,6 @@
   }
 
   .photo-gallery__picture {
-    height: 400px;
     bottom: 0;
     left: 0;
   }
@@ -214,6 +220,7 @@
   padding: 23px 0;
   width: 100%;
 }
+
 @media (min-width: @tablet-width) {
   .photo-gallery__image {
     padding: 0 0 23px;
@@ -255,6 +262,7 @@
   padding: 0 22px 20px;
   margin: 0;
 }
+
 @media (min-width: @tablet-width) {
   .video-gallery__description {
     padding: 0 162px 20px;
@@ -278,11 +286,13 @@
   width: 100%;
   margin: 0 auto;
 }
+
 @media (min-width: @tablet-width) {
   .video-gallery__wrapper {
     width: 85%;
   }
 }
+
 @media (min-width: @desktop-width) {
   .video-gallery__wrapper {
     width: 65%;
