@@ -1,71 +1,96 @@
 .page-footer {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: 130px;
+  }
 }
 
 .page-footer__label {
   font-size: 21px;
   line-height: 1.24;
-  color: hsl(0, 0%, 0%);
-  margin-top: 41px;
-  margin-bottom: 41px;
+  color: #000000;
+  padding: 0;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 .page-footer__social-links {
-  width: 150px;
+  max-width: 320px;
   list-style: none;
   display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 40px;
+  justify-content: center;
+  margin: 0 0 9%;
   padding: 0;
 }
 
-.site-list__item:not(:last-child){
-  margin-right: 6px;
+@media (min-width: @tablet-width) {
+  .page-footer__social-links {
+    margin: 0 15px 0 0;
+  }
 }
-
 
 .page-footer__social-links a {
   display: inline-block;
-  background-color: hsl(202, 47%, 66%);
+  background-color: #80b3d1;
   width: 46px;
   height: 48px;
   position: relative;
+  margin: 0;
 }
 
-.site-list__link--twitter svg {
+.footer-list__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.footer-list__link--twitter svg {
   position: absolute;
   top: 16px;
-  left: 16px;
+  left: 14px;
 }
 
-.site-list__link--facebook svg {
+.footer-list__link--facebook svg {
   position: absolute;
   top: 14px;
   left: 19px;
 }
 
-.site-list__link--youtube svg {
+.footer-list__link--youtube svg {
   position: absolute;
   top: 18px;
   left: 13px;
 }
 
 .page-footer__create-by {
- width: 320px;
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__create-by {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__description {
   font-size: 14px;
   line-height: 1.86;
-  color: hsl(0, 0%, 0%);
+  color: #000000;
+  padding: 0;
+  margin: 0 2% 0 0;
+}
+
+.page-footer__academy-logo {
   margin: 0;
-  padding-right: 11px;
+  box-sizing: border-box;
+  width: 33px;
+  height: 40px;
 }

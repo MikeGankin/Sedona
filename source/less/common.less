@@ -1,0 +1,55 @@
+body {
+  min-width: 320px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 960px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSans.woff2") format("woff2"), url("fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSansBold.woff2") format("woff2"), url("fonts/PTSansBold.woff") format("woff");
+}
