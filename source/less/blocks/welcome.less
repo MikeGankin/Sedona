@@ -1,21 +1,31 @@
+.welcome {
+  width: 100%;
+  min-width: 221px;
+}
+
 .main-picture__wraper {
   width: 100%;
-  min-height: 390px;
-  margin-bottom: 30px;
+  min-height: 387px;
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &::after {
     content: "";
     position: absolute;
     width: 320px;
     height: 27px;
-    bottom: 1px;
+    bottom: 0;
     left: 0;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
   }
+}
+
+.main-picture__wraper--photo,
+.main-picture__wraper--feedback {
+  min-height: 160px;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,16 +58,23 @@
   width: 280px;
   height: 214px;
   position: absolute;
-  top: 24%;
-  left: 7%;
+  top: 88px;
+  left: 20px;
+}
+
+.main-picture__slogan--photo {
+  width: 229px;
+  height: 39px;
+  top: 50px;
+  left: 45px;
 }
 
 @media (min-width: @tablet-width) {
   .main-picture__slogan {
     width: 460px;
     height: 350px;
-    top: 15%;
-    left: 21%;
+    top: 77px;
+    left: 153px;
   }
 
   .main-picture__image {
@@ -78,13 +95,14 @@
   text-align: center;
   color: #000000;
   margin: 0;
-  padding-bottom: 26px;
+  padding: 13% 10% 8% 10%;
   position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__label {
-    padding: 0 116px 26px;
+    padding: 51px 10% 28px 10%;
+    font-size: 21px;
   }
 }
 
@@ -100,17 +118,14 @@
   color: #000000;
   margin: 0;
   line-height: 26px;
-  padding-bottom: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10% 8% 10%;
   position: relative;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__description {
-    width: 76%;
-    margin: 0 auto;
+    padding: 0px 16% 49px 16%;
   }
 }
 

@@ -1,7 +1,8 @@
 .feedback__form {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
 }
+
 @media (min-width: @tablet-width) {
   .feedback__form {
     display: flex;
@@ -18,9 +19,11 @@
   text-align: center;
   color: #000000;
   margin: 0;
+  padding-top: 35px;
   padding-bottom: 26px;
   position: relative;
 }
+
 @media (min-width: @tablet-width) {
   .feedback__label {
     font-size: 26px;
@@ -33,11 +36,12 @@
   font-size: 14px;
   color: #000000;
   margin: 0;
-  line-height: 26px;
-  padding: 0 10px 35px;
+  line-height: 24px;
+  padding: 0 10px 16px;
   position: relative;
   text-align: center;
 }
+
 @media (min-width: @tablet-width) {
   .feedback__description {
     padding: 0 104px 35px;
@@ -46,7 +50,13 @@
 
 .form__wrapper {
   border-top: 1px solid #f2f2f2;
+  padding: 0 20px 0;
 }
+
+.form__wrapper--emotions {
+  margin-bottom: 75px;
+}
+
 @media (min-width: @tablet-width) {
   .form__wrapper--introduce {
     order: 2;
@@ -90,6 +100,7 @@
     border: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .form__wrapper--contacts p {
     width: 40%;
@@ -126,20 +137,24 @@
   left: 45px;
 }
 
-.feedback__label {
-  position: relative;
-  font-size: 18px;
-  line-height: 26px;
-  padding-right: 20px;
-  padding-left: 20px;
-  text-align: center;
-}
-
 .form__label {
   text-align: center;
   font-size: 18px;
-  margin-top: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form__label--impressions {
   margin-bottom: 35px;
+}
+
+.form__area {
+  margin-bottom: 19px;
+  margin-top: 0;
+}
+
+.introduce {
+  font-size: 14px;
 }
 
 @media (min-width: @tablet-width) {
@@ -189,17 +204,17 @@
   }
 }
 
-.form__label--places {
-  padding-bottom: 60px;
+.form__label--emotions {
+  margin-bottom: 16px;
 }
 
-.form__label--emotions {
-  margin-bottom: 60px;
+.form__label--places {
+  margin-bottom: 28px;
 }
 
 .form__label--information {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .form__wrapper--introduce {
@@ -260,7 +275,14 @@
 .form__area--phone {
   position: relative;
   width: 100%;
-  margin: 0 0 25px;
+}
+
+.form__area--phone {
+  margin: 0 0 11px;
+}
+
+.form__area--mail {
+  margin: 0 0 27px;
 }
 
 @media (min-width: @desktop-width) {
@@ -278,8 +300,10 @@
 
 .form__area--mail label,
 .form__area--phone label {
-  padding-bottom: 15px;
+  padding-left: 22px;
+  margin-bottom: 8px;
   font-size: 14px;
+  display: block;
 }
 
 @media (min-width: @desktop-width) {
@@ -294,7 +318,7 @@
   position: absolute;
   width: 59px;
   height: 58px;
-  top: 27px;
+  top: 34px;
   right: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-phone.svg");
@@ -307,7 +331,7 @@
   position: absolute;
   width: 59px;
   height: 58px;
-  top: 27px;
+  top: 34px;
   right: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-mail.svg");
@@ -327,10 +351,10 @@
   }
 }
 
-.checkbox__label,
-.radio__label {
+.radio__label,
+.checkbox__label {
   position: relative;
-  padding-left: 78px;
+  padding-left: 77px;
   text-transform: none;
   font-weight: bold;
   font-size: 18px;
@@ -342,10 +366,10 @@
 .radio__label::before {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
-  top: -18px;
-  left: 0;
+  width: 21px;
+  height: 21px;
+  top: -16px;
+  left: -1px;
   background-color: #e6e6e6;
   border: 18px solid #e6e6e6;
   border-radius: 100%;
@@ -356,8 +380,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  top: -14px;
-  left: 0;
+  top: -17px;
+  left: -3px;
   background-color: #e6e6e6;
   border-radius: 3px;
 }
@@ -372,10 +396,18 @@
   background-position: center;
 }
 
-.form__area--checkbox,
 .form__area--radio {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
+}
+
+.form__area--checkbox {
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
+.form__area--checkbox:last-child {
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -423,13 +455,15 @@
 
 .text__input {
   width: 100%;
-  padding: 10px 20px;
+  max-height: 161px;
+  padding: 18px 20px;
   background-color: #e6e6e6;
   border: none;
   font-size: 16px;
   font-weight: bold;
   box-sizing: border-box;
   resize: none;
+  line-height: 24px;
 }
 
 .form__submit {
@@ -437,10 +471,15 @@
   color: #ffffff;
   width: 100%;
   border: none;
-  padding: 17px 0;
+  padding: 18px 0;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.form__wrapper--submit {
+  border: none;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -462,7 +501,7 @@
 }
 
 .form__area--text {
-  margin: 10px 0;
+  margin-bottom: 41px;
 }
 
 .form__description {
