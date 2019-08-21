@@ -5,7 +5,7 @@
 
 .main-picture__wraper {
   width: 100%;
-  min-height: 387px;
+  min-height: 386px;
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -14,18 +14,17 @@
   &::after {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 100%;
     height: 27px;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
   }
 }
 
-.main-picture__wraper--photo,
-.main-picture__wraper--feedback {
-  min-height: 160px;
+.main-picture__wraper--small {
+  min-height: 156px;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,7 +41,7 @@
     }
   }
 
-  .main-picture__wraper--photo {
+  .main-picture__wraper--small {
     min-height: 290px;
   }
 }
@@ -56,6 +55,10 @@
       background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
   }
+
+  .main-picture__wraper--small {
+    min-height: 300px;
+  }
 }
 
 .main-picture__slogan {
@@ -66,7 +69,7 @@
   left: 20px;
 }
 
-.main-picture__slogan--photo {
+.main-picture__slogan--small {
   width: 229px;
   height: 39px;
   top: 50px;
@@ -77,8 +80,16 @@
   .main-picture__slogan {
     width: 460px;
     height: 350px;
-    top: -40px;
-    left: 156px;
+    position: absolute;
+    top: 77px;
+    left: 154px;
+  }
+
+  .main-picture__slogan--small {
+    width: 460px;
+    height: 350px;
+    top: -41px;
+    left: 155px;
   }
 
   .main-picture__image {
@@ -88,7 +99,13 @@
 
 @media (min-width: @desktop-width) {
   .main-picture__slogan {
-    left: 31%;
+    top: 77px;
+    left: 371px;
+  }
+
+  .main-picture__slogan--small {
+    top: -31px;
+    left: 371px;
   }
 }
 
@@ -98,15 +115,16 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin: 0;
-  padding: 13% 10% 8% 10%;
+  margin: 42px 0 27px;
+  padding: 0 23px 0;
   position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__label {
-    padding: 51px 10% 28px 10%;
+    padding: 0 72px 0;
     font-size: 21px;
+    margin: 51px 0 27px;
   }
 }
 
@@ -120,16 +138,17 @@
 .welcome__description {
   font-size: 14px;
   color: #000000;
-  margin: 0;
+  margin: 0 0 25px;
   line-height: 26px;
-  padding: 0 10% 8% 10%;
+  padding: 0 10px 0;
   position: relative;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__description {
-    padding: 0px 16% 49px 16%;
+    padding: 0;
+    margin: 0 0 50px;
   }
 }
 

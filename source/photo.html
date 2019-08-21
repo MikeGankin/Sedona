@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Фото галлерея</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +18,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            <a class="main-nav__link" href="#">Фото и видео</a>
           </li>
           <li class="nav-list__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -49,8 +48,8 @@
       </div>
     </header>
     <main>
-      <div class="main-picture__wraper main-picture__wraper--photo">
-        <svg class="main-picture__slogan main-picture__slogan--photo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
+      <div class="main-picture__wraper main-picture__wraper--small">
+        <svg class="main-picture__slogan main-picture__slogan--small" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
           <g>
             <path fill="#FFFFFF" d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z"/>
             <path fill="#FFFFFF" d="M91.831,18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96L91.831,18.959 L91.831,18.959z"/>
@@ -83,7 +82,7 @@
                 <p class="photo-gallery__autor">Автор фото: Борис</p>
               </div>
               <div class="photo-gallery__like">
-                <p>
+                <p class="photo-gallery__icon">
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                     <g id="Page-1">
                       <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -112,7 +111,7 @@
                 <p class="photo-gallery__autor">Автор фото: Сергей</p>
               </div>
               <div class="photo-gallery__like">
-                <p>
+                <p class="photo-gallery__icon">
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                     <g id="Page-1">
                       <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -141,7 +140,7 @@
                 <p class="photo-gallery__autor">Автор фото: Петр</p>
               </div>
               <div class="photo-gallery__like">
-                <p>
+                <p class="photo-gallery__icon">
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                     <g id="Page-1">
                       <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -170,7 +169,7 @@
                 <p class="photo-gallery__autor">Автор фото: Антон</p>
               </div>
               <div class="photo-gallery__like">
-                <p>
+                <p class="photo-gallery__icon">
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                     <g id="Page-1">
                       <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -192,7 +191,30 @@
         <h3 class="video-gallery__label">Все еще сомневаетесь?</h3>
         <p class="video-gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-gallery__wrapper">
-          <video class="video-gallery__video" src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
+          <picture>
+            <source srcset="img/video-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/video-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="content-img" src="img/video-mobile@1x.jpg" alt="Видео о городе">
+          </picture>
+          <div class="video-gallery__controls controls">
+            <div class="controls__scrollbar"></div>
+            <div class="controls__functions">
+              <svg class="replay" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
+                <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
+              </svg>
+              <svg class="subtitles" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
+                <path d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"/>
+              </svg>
+              <svg class="fullscreen" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                <g>
+                  <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
+                  <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
+                  <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
+                  <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -232,10 +254,12 @@
       </ul>
       <div class="page-footer__create-by">
         <p class="page-footer__description">Разработано</p>
-        <svg class="page-footer__academy-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27px" height="34px">
+        <p class="page-footer__academy-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27px" height="34px">
           <path fill="hsl(0, 0%, 0%)"
             d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-        </svg>
+          </svg>
+        </p>
       </div>
     </footer>
   </div>
