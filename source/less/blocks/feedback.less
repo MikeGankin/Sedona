@@ -24,7 +24,7 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin: 39px 0 26px 0;
+  margin: 41px 0 26px 0;
   padding: 0;
   position: relative;
 }
@@ -56,7 +56,7 @@
 
 @media (min-width: @tablet-width) {
   .feedback__description {
-    padding: 0 104px 35px;
+    padding: 0 162px 35px;
   }
 }
 
@@ -107,36 +107,26 @@
      background-color: #dbdbdb;
     }
   }
-
-  @media (min-width: @desktop-width) {
-    .form__wrapper--impressions::after {
-      right: -78px;
-    }
-  }
-
-  .form__wrapper--places {
-    order: 4;
-    width: 100%;
-  }
-
-  .form__wrapper--emotions {
-    order: 5;
-    width: 100%;
-  }
-
-  .feedback__form div {
-    border: none;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .form__wrapper--contacts p {
-    width: 40%;
+  .form__wrapper--impressions::after {
+    right: -78px;
   }
+}
 
-  .form__area--phone {
-    margin-right: 80px;
-  }
+.form__wrapper--places {
+  order: 4;
+  width: 100%;
+}
+
+.form__wrapper--emotions {
+  order: 5;
+  width: 100%;
+}
+
+.feedback__form div {
+  border: none;
 }
 
 .feedback__wrapper {
@@ -168,8 +158,8 @@
 .form__label {
   text-align: center;
   font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 19px;
+  margin-bottom: 21px;
 }
 
 .form__label--impressions {
@@ -185,6 +175,14 @@
   font-size: 14px;
 }
 
+.form__area--phone label,
+.form__area--mail label {
+  font-size: 14px;
+  margin-left: 22px;
+  display: block;
+  margin-bottom: 6px;
+}
+
 @media (min-width: @tablet-width) {
   .form__label {
     margin-top: 0;
@@ -192,10 +190,6 @@
     font-size: 21px;
     position: relative;
     width: 100%;
-  }
-
-  .form__label--places {
-    padding: 0 20px 0 20px;
   }
 
   .form__label--information::before {
@@ -213,7 +207,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    top: 11px;
+    top: 24px;
     left: 0;
     background-color: #d6d6d6;
   }
@@ -229,12 +223,25 @@
   }
 
   .form__label--information span,
-  .form__label--emotions span,
-  .form__label--places span {
+  .form__label--emotions span {
     background-color: #ffffff;
     padding: 0 64px;
     position: relative;
     z-index: 1;
+  }
+
+  .form__label--places span {
+    display: block;
+    width: 41%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0 66px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .form__wrapper--emotions {
+    margin-bottom: 61px;
   }
 }
 
@@ -248,6 +255,10 @@
   .form__label--places::before {
     top: 24px;
   }
+
+  .form__wrapper--emotions {
+    margin-bottom: 69px;
+  }
 }
 
 .form__label--emotions {
@@ -255,7 +266,7 @@
 }
 
 .form__label--places {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .form__label--information {
@@ -296,12 +307,26 @@
 @media (min-width: @tablet-width) {
   .form__input--mail {
     width: 92%;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
   }
 
   .form__input--phone {
     width: 92%;
     margin: 0 0 12px;
+  }
+
+  .form__wrapper--introduce label {
+    padding-right: 18px;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+  .form__label--places {
+    margin-bottom: 57px;
+  }
+
+  .form__area--phone {
+    margin: 0 0 18px;
   }
 }
 
@@ -319,23 +344,29 @@
 }
 
 .form__area--phone {
-  margin: 0 0 13px;
+  margin: 0 0 8px;
 }
 
 .form__area--mail {
-  margin: 0 0 27px;
+  margin: 0 0 30px;
 }
 
 @media (min-width: @desktop-width) {
   .form__area--mail {
+    width: 44%;
     display: flex;
     align-items: baseline;
   }
 
+  .form__area--mail label {
+    width: 250px;
+  }
+
   .form__area--phone {
+    width: 40%;
     display: flex;
     align-items: baseline;
-    margin-right: 138px;
+    margin-right: 96px;
   }
 }
 
@@ -349,7 +380,7 @@
 @media (min-width: @desktop-width) {
   .form__input--email,
   .form__input--phone {
-    min-width: 170px;
+    max-width: 258px;
   }
   .hide {
     display: none;
@@ -361,7 +392,7 @@
   position: absolute;
   width: 59px;
   height: 56px;
-  top: 34px;
+  top: 32px;
   right: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-phone.svg");
@@ -374,7 +405,7 @@
   position: absolute;
   width: 59px;
   height: 56px;
-  top: 34px;
+  top: 32px;
   right: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-mail.svg");
@@ -385,7 +416,7 @@
 @media (min-width: @desktop-width) {
   .form__area--phone::before {
     top: 0;
-    right: -59px;
+    right: -16px;
   }
 
   .form__area--mail::before {
@@ -461,6 +492,7 @@
 
   .form__area--checkbox {
     width: 205px;
+    margin-bottom: 61px;
   }
 
   .form__label--impressions {
@@ -468,7 +500,7 @@
   }
 
   .form__label--introduce {
-    margin: 39px 0 59px 6px;
+    margin: 39px 0 56px 6px;
     text-align: left;
   }
 
@@ -478,7 +510,23 @@
   }
 
   .form__area--checkbox:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 61px;
+  }
+
+  .radio__label {
+    padding-left: 76px;
+  }
+
+  .checkbox__label {
+    padding-left: 83px;
+  }
+
+  .form__input[placeholder] {
+    padding-left: 20px;
+  }
+
+  .checkbox__label::before {
+    left: 3px;
   }
 }
 
@@ -491,17 +539,37 @@
     margin: 0 auto 20px;
     width: 71%;
   }
+
+  .form__label--emotions {
+    margin-bottom: 54px;
+    margin-top: 4px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .checkbox__wrapper {
     flex-wrap: nowrap;
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
   }
 
   .form__label--impressions {
-    margin: 40px 0 73px 10px;
+    margin: 40px 0 72px 14px;
+  }
+
+  .form__label--information {
+    margin-top: 31px;
+    margin-bottom: 74px;
+  }
+
+  .form__area--phone label,
+  .form__area--mail label {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .checkbox__label::before {
+    left: 6px;
   }
 }
 
@@ -538,7 +606,6 @@
   .form__wrapper--submit {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 98px;
   }
 
   .form__submit {
@@ -564,6 +631,7 @@
   .form__description {
     display: block;
     font-size: 14px;
+    margin: 19px 0 0 0;
   }
 
   .form__area--text {

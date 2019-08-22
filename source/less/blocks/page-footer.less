@@ -13,12 +13,17 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 80%;
+  }
+}
+
 .page-footer__label {
   font-size: 21px;
   color: #000000;
   padding: 0;
-  margin-bottom: 32px;
-  margin-left: 2px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -34,6 +39,11 @@
 @media (min-width: @tablet-width) {
   .page-footer__social-links {
     margin: 0;
+  }
+
+  .page-footer__label {
+    margin-bottom: 29px;
+    margin-left: 2px;
   }
 }
 
