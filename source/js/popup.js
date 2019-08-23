@@ -1,4 +1,6 @@
-var wrong = document.querySelector('.wrong');
-var wrongClose = document.querySelector('.wrong__button');
-var success = document.querySelector('.success');
-var successClose = document.querySelector('.success__button');
+var form = document.querySelector('.feedback__form');
+var submitBtn = form.querySelector('submit');
+
+form.addEventListener('submitBtn', function (event) {
+ event.preventDefault()
+});
