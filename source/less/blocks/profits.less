@@ -1,11 +1,6 @@
 .profits {
-  max-height: 469px;
   background-color: #80b3d1;
   color: #ffffff;
-}
-
-.profits__conteiner {
-  margin-bottom: 37px;
 }
 
 .profits__img {
@@ -21,7 +16,6 @@
 
   .profits__conteiner {
     width: 34%;
-    min-height: 256px;
     margin: 0;
   }
 
@@ -31,7 +25,8 @@
 
   .profits__img {
     width: 67%;
-    max-height: 256px;
+    min-height: 256px;
+    margin-bottom: -4px;
   }
 }
 
@@ -40,19 +35,24 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center;
-  padding: 18% 15% 2% 15%;
-  margin: 0;
+  padding: 57px 0 0;
+  margin: 0 0 5px;
 }
 
 .profits__title--bridge {
-  padding: 13% 15% 2% 15%;
+  padding: 42px 0 0 0;
+  margin: 0 0 5px;
 }
 
 @media (min-width: @tablet-width) {
   .profits__title {
     font-size: 21px;
-    margin: 0;
-    padding: 46px 10% 7px;
+    margin: 46px 0 8px;
+    padding: 0 20px 0;
+  }
+
+  .profits__title--bridge {
+    padding: 0 20px 0;
   }
 }
 
@@ -61,8 +61,13 @@
   line-height: 26px;
   color: #ffffff;
   text-align: center;
-  margin: 0;
-  padding: 0 20% 11px 20%;
+  margin: 0 0 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .profits__number {
+    margin: 0 0 18px;
+  }
 }
 
 .profits__text {
@@ -70,8 +75,15 @@
   line-height: 22px;
   color: #ffffff;
   text-align: center;
-  padding: 0 7% 0;
+  padding: 0 21px 37px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .profits__text {
+    padding: 0 43px 0;
+    margin: 0 0 40px 0;
+  }
 }
 
 .thumbnails {
@@ -97,7 +109,7 @@
 }
 
 .thumbnails__item:nth-child(3) {
-  padding: 9% 0 0 22%;
+  padding: 9% 0 33px 22%;
 }
 
 .thumbnails__title {
@@ -144,6 +156,10 @@
   .thumbnails__text {
     padding: 0 18%;
   }
+
+  .thumbnails__title {
+    padding: 0 0 23px 0;
+  }
 }
 
 .thumbnails__item--housing {
@@ -156,8 +172,9 @@
     left: 22px;
     width: 38px;
     height: 36px;
-    background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
+    background-color: red;
+    // background-image: url("../img/icon-house.svg");
+    // background-repeat: no-repeat;
   }
 }
 
@@ -171,8 +188,9 @@
     left: 25px;
     width: 32px;
     height: 38px;
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
+    background-color: red;
+    // background-image: url("../img/icon-gift.svg");
+    // background-repeat: no-repeat;
   }
 }
 
@@ -187,8 +205,9 @@
     left: 20px;
     width: 40px;
     height: 35px;
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
+    background-color: red;
+    // background-image: url("../img/icon-burger.svg");
+    // background-repeat: no-repeat;
   }
 }
 
