@@ -3,19 +3,14 @@
   color: #ffffff;
 }
 
-.profits__img {
-  max-height: 260px;
-}
-
 @media (min-width: @tablet-width), and (min-width: @desktop-width) {
   .profits__content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
   .profits__conteiner {
-    width: 34%;
+    width: 33%;
     margin: 0;
   }
 
@@ -25,8 +20,6 @@
 
   .profits__img {
     width: 67%;
-    min-height: 256px;
-    margin-bottom: -4px;
   }
 }
 
@@ -40,19 +33,15 @@
 }
 
 .profits__title--bridge {
-  padding: 42px 0 0 0;
+  padding: 41px 0 0 0;
   margin: 0 0 5px;
 }
 
 @media (min-width: @tablet-width) {
   .profits__title {
     font-size: 21px;
-    margin: 46px 0 8px;
-    padding: 0 20px 0;
-  }
-
-  .profits__title--bridge {
-    padding: 0 20px 0;
+    padding: 46px 20px 8px;
+    margin: 0;
   }
 }
 
@@ -66,23 +55,37 @@
 
 @media (min-width: @tablet-width) {
   .profits__number {
-    margin: 0 0 18px;
+    padding: 0 0 18px;
+    margin: 0;
   }
 }
 
 .profits__text {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 21px;
   color: #ffffff;
   text-align: center;
-  padding: 0 21px 37px;
+  padding: 0 21px 39px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .profits__text {
-    padding: 0 43px 0;
-    margin: 0 0 40px 0;
+    padding: 0 43px 35px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profits__title {
+    font-size: 21px;
+    padding: 52px 94px 8px;
+    margin: 0;
+  }
+
+  .profits__text {
+    padding: 0 62px 56px;
+    margin: 0;
   }
 }
 
@@ -101,15 +104,15 @@
 }
 
 .thumbnails__item:nth-child(1) {
-  padding: 12% 0 0 22%;
+  padding: 39px 0 0 70px;
 }
 
 .thumbnails__item:nth-child(2) {
-  padding: 9% 0 0 22%;
+  padding: 31px 0 0 70px;
 }
 
 .thumbnails__item:nth-child(3) {
-  padding: 9% 0 33px 22%;
+  padding: 31px 0 37px 70px;
 }
 
 .thumbnails__title {
@@ -120,6 +123,7 @@
 
 .thumbnails__text {
   font-size: 14px;
+  line-height: 21px;
   margin: 0;
   padding: 0 10% 0 0;
 }
@@ -135,7 +139,7 @@
   }
 
   .thumbnails__item {
-    width: 33%;
+    width: 100%;
   }
 
   .thumbnails__item:nth-child(1) {
@@ -154,11 +158,12 @@
   }
 
   .thumbnails__text {
-    padding: 0 18%;
+    padding: 0 45px 61px;
   }
 
   .thumbnails__title {
     padding: 0 0 23px 0;
+    font-size: 21px;
   }
 }
 
@@ -168,13 +173,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 27px;
     left: 22px;
     width: 38px;
     height: 36px;
-    background-color: red;
-    // background-image: url("../img/icon-house.svg");
-    // background-repeat: no-repeat;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -184,13 +189,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 17px;
     left: 25px;
     width: 32px;
     height: 38px;
-    background-color: red;
-    // background-image: url("../img/icon-gift.svg");
-    // background-repeat: no-repeat;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -201,13 +206,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 23px;
+    left: 18px;
     width: 40px;
     height: 35px;
-    background-color: red;
-    // background-image: url("../img/icon-burger.svg");
-    // background-repeat: no-repeat;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -217,26 +222,26 @@
   }
 
   .thumbnails__item--housing::before {
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 75px;
     height: 72px;
+    top: 59px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .thumbnails__item--souvenirs::before {
-    top: 57px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 64px;
     height: 75px;
+    top: 56px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .thumbnails__item--food::before {
-    top: 63px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 77px;
-    height: 68px;
+    height: 69px;
+    top: 62px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }

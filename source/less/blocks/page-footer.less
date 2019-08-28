@@ -38,11 +38,10 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__social-links {
-    margin: 0;
+    margin: 0 0 4px 5px;
   }
 
   .page-footer__label {
-    margin-bottom: 29px;
     margin-left: 2px;
   }
 }
@@ -85,27 +84,41 @@
 }
 
 .page-footer__description {
-  font-size: 14px;
+  font-size: 15px;
   color: #000000;
   padding: 0;
   margin: 0 0 7px 5px;
 }
 
 .page-footer__academy-logo {
-  margin: 0 0 0 7px;
+  margin: 0 0 0 3px;
 }
 
 .page-footer__academy-logo svg {
-  width: 40px;
+  width: 39px;
   height: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__description {
-    margin: 0 0 10px 10px;
+    margin: 0 0 12px 10px;
   }
 
   .page-footer__academy-logo {
-    margin: 0 -4px 3px 3px;
+    margin: 0 -3px 6px 3px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__academy-logo {
+    margin: 0 -6px 6px 3px;
+  }
+
+  .page-footer__label {
+    margin-left: 0;
+  }
+
+  .page-footer__social-links {
+    margin: 0 0 4px 6px;
+ }
 }

@@ -27,7 +27,15 @@
             <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-nav__open" type="button" name="button">
+      </nav>
+      <div class="header-wrapper">
+        <h1 class="visually-hidden">Седона</h1>
+        <picture>
+          <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+          <img src="img/logo-sedona-mobile.svg" alt="MDN">
+        </picture>
+        <button class="header-wrapper__menue-open" type="button" name="button">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
             xml:space="preserve">
             <g>
@@ -37,14 +45,6 @@
             </g>
           </svg>
         </button>
-      </nav>
-      <div class="header-wrapper">
-        <h1 class="visually-hidden">Седона</h1>
-        <picture>
-          <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
-          <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-          <img src="img/logo-sedona-mobile.svg" alt="MDN">
-        </picture>
       </div>
     </header>
     <main>
@@ -81,7 +81,7 @@
             </p>
           </div>
           <div class="form__wrapper form__wrapper--contacts">
-            <h3 class="form__label form__label--information"><span>Контактная информация</span></h3>
+            <h3 class="form__label form__label--information"><span>Контактная информация:</span></h3>
             <p class="form__area form__area--phone">
               <label for="phone-number"><span class="hide">Контактный</span> телефон*:</label>
               <input class="form__input form__input--phone" type="text" name="number" id="phone-number" placeholder="Введите телефон">
