@@ -39,6 +39,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .find-hotel__description {
+    padding: 0 400px 46px;
+  }
+}
+
 .find-hotel__link {
   display: inline-block;
   width: 280px;
@@ -56,6 +62,13 @@
   .find-hotel__link {
     width: 60%;
     margin: 0 0 58px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .find-hotel__link {
+    width: 38%;
+    margin: 0 0 65px 0;
   }
 }
 
@@ -87,7 +100,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .map::after {
-    left: 586px;
+  .map {
+    margin-bottom: 3px;
+
+    &::after {
+      left: 585px;
+    }
   }
 }

@@ -39,7 +39,7 @@
 
 @media (min-width: @desktop-width) {
   .feedback__label {
-    margin: 115px 0 30px;
+    margin: 115px 0 29px;
     padding: 0;
   }
 }
@@ -62,7 +62,7 @@
 
 @media (min-width: @desktop-width) {
   .feedback__description {
-    padding: 0 378px 18px;
+    padding: 0 378px 19px;
   }
 }
 
@@ -154,8 +154,8 @@
 .form__label {
   text-align: center;
   font-size: 18px;
-  margin-top: 19px;
-  margin-bottom: 22px;
+  margin-top: 18px;
+  margin-bottom: 23px;
 }
 
 .form__label--impressions {
@@ -237,7 +237,12 @@
   }
 
   .form__wrapper--emotions {
-    margin-bottom: 61px;
+    margin-bottom: 64px;
+  }
+
+  .form__area {
+    margin: 0 0 22px;
+    width: 100%;
   }
 }
 
@@ -253,7 +258,7 @@
   }
 
   .form__wrapper--emotions {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .form__area {
@@ -491,7 +496,7 @@
 }
 
 .form__area--checkbox:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: @tablet-width) {
@@ -510,7 +515,7 @@
   }
 
   .form__label--introduce {
-    margin: 39px 0 56px 6px;
+    margin: 39px 0 56px 12px;
     text-align: left;
   }
 
@@ -592,7 +597,7 @@
   }
 
   .checkbox__label::before {
-    left: 2px;
+    left: -1px;
   }
 
   .form__label--introduce {
@@ -605,8 +610,15 @@
   }
 
   .form__area--checkbox {
-    margin: 0 0 61px;
-    width: 21%;
+    margin: 0 0 61px 0;
+  }
+
+  .form__area--checkbox:nth-child(1) {
+    margin: 0px 25px 61px 1px;
+  }
+
+  .form__area--checkbox:nth-child(2) {
+    margin: 0 25px 61px 0px;
   }
 
   .form__label--emotions {
@@ -633,8 +645,8 @@
   color: #ffffff;
   width: 280px;
   border: none;
-  padding: 18px 0;
-  font-size: 21px;
+  padding: 17px 0;
+  font-size: 19px;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 auto;
@@ -643,10 +655,13 @@
 .form__wrapper--submit {
   border: none;
   padding: 0;
+  width: 87%;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .form__wrapper--submit {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -664,7 +679,7 @@
 }
 
 .form__area--text {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .form__description {
