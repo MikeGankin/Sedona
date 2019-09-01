@@ -296,15 +296,25 @@
 
 .form__input {
   width: 100%;
-  min-height: 56px;
-  border: none;
+  min-height: 48px;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   padding: 0 21px;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .form__input--mail,
 .form__input--phone {
-  width: 179px;
+  width: 171px;
 }
 
 @media (min-width: @tablet-width) {
@@ -393,10 +403,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__input--email,
-  .form__input--phone {
-    max-width: 258px;
-  }
   .hide {
     display: none;
   }
@@ -459,8 +465,8 @@
   height: 21px;
   top: -18px;
   left: -1px;
-  background-color: #e6e6e6;
-  border: 18px solid #e6e6e6;
+  background-color: #f2f2f2;
+  border: 18px solid #f2f2f2;
   border-radius: 100%;
 }
 
@@ -471,18 +477,29 @@
   height: 56px;
   top: -18px;
   left: 0px;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   border-radius: 3px;
+}
+
+.radio__button:hover + .radio__label::before {
+  background-color: #e5e5e5;
+  border: 18px solid #e5e5e5;
 }
 
 .radio__button:checked + .radio__label::before {
   background-color: #000000;
+  border: 18px solid #e5e5e5;
+}
+
+.checkbox:hover + .checkbox__label::before {
+  background-color: #e5e5e5;
 }
 
 .checkbox:checked + .checkbox__label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #d5d5d5;
 }
 
 .form__area--radio {
@@ -650,6 +667,15 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 auto;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 .form__wrapper--submit {
