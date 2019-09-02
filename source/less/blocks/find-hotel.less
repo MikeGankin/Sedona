@@ -16,7 +16,8 @@
 @media (min-width: @tablet-width) {
   .find-hotel__label {
     font-size: 30px;
-    margin: 57px 0 29px;
+    padding: 57px 0 30px;
+    margin: 0;
   }
 }
 
@@ -38,6 +39,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .find-hotel__description {
+    padding: 0 400px 46px;
+  }
+}
+
 .find-hotel__link {
   display: inline-block;
   width: 280px;
@@ -49,6 +56,15 @@
   line-height: 26px;
   text-decoration: none;
   margin-bottom: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -58,11 +74,18 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .find-hotel__link {
+    width: 38%;
+    margin: 0 0 65px 0;
+  }
+}
+
 .map {
   max-height: 350px;
   width: 100%;
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   &::after {
     position: absolute;
@@ -86,7 +109,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .map::after {
-    left: 586px;
+  .map {
+    margin-bottom: 3px;
+
+    &::after {
+      left: 585px;
+    }
   }
 }

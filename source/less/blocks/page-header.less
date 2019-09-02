@@ -33,12 +33,21 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .header-wrapper {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+.header-wrapper__nav-open {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  bottom: 20px;
+  right: 26px;
+  border: none;
+  background: transparent;
+  fill: #80b3d1;
+  text-align: center;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header-wrapper__nav-open {
+    display: none;
   }
 }
