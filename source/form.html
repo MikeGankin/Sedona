@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="nav-list__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link main-nav__link--active" href="#">Форма отзыва</a>
           </li>
           <li class="nav-list__item">
             <a class="main-nav__link" href="#">HTML Academy</a>
@@ -37,105 +37,106 @@
           <img src="img/logo-sedona-mobile.svg" alt="MDN">
         </picture>
         <button class="header-wrapper__nav-open" type="button" name="button">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
-            xml:space="preserve">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
             <g>
-              <rect width="22.928" height="3.964" />
-              <rect y="9.009" width="22.928" height="3.964" />
-              <rect y="18.018" width="22.928" height="3.964" />
+              <rect width="22.928" height="3.964"></rect>
+              <rect y="9.009" width="22.928" height="3.964"></rect>
+              <rect y="18.018" width="22.928" height="3.964"></rect>
             </g>
           </svg>
         </button>
       </div>
     </header>
     <main>
-      <div class="main-picture__wraper main-picture__wraper--small">
+      <div class="main-picture">
+        <div class="main-picture__wraper main-picture__wraper--small">
         <svg class="main-picture__slogan main-picture__slogan--small" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
           <g>
-            <path fill="#FFFFFF" d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z"/>
-            <path fill="#FFFFFF" d="M91.831,18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96L91.831,18.959 L91.831,18.959z"/>
-            <path fill="#FFFFFF" d="M129.417,2.482h27.594c20.844,0,38.016,16.377,38.016,37.419c0,21.041-17.271,37.42-38.016,37.42h-27.594 V2.482z M148.872,60.846h4.367c11.612,0,21.539-6.352,21.539-20.942c0-13.4-8.834-20.943-21.341-20.943h-4.565V60.846z"/>
-            <path fill="#FFFFFF" d="M286.873,38.513c0,24.219-17.371,41.292-41.394,41.292c-24.02,0-41.391-17.071-41.391-41.292 C204.089,15.881,223.941,0,245.479,0C267.019,0,286.873,15.881,286.873,38.513z M224.339,38.612 c0,12.905,9.529,22.333,21.141,22.333c11.613,0,21.144-9.43,21.144-22.333c0-10.323-9.526-19.752-21.144-19.752 C233.867,18.86,224.339,28.29,224.339,38.612z"/>
-            <path fill="#FFFFFF" d="M297.238,2.482h19.454l35.636,45.757h0.196V2.482h19.453v74.839h-19.453L316.89,31.465h-0.197v45.856 h-19.454V2.482z"/>
-            <path fill="#FFFFFF" d="M407.345,64.319l-5.16,13.002h-20.646l28.785-74.839h21.242l28.188,74.839h-20.745l-4.862-13.002H407.345z M420.945,25.609h-0.199l-8.039,23.824h16.178L420.945,25.609z"/>
+            <path fill="#FFFFFF" d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z"></path>
+            <path fill="#FFFFFF" d="M91.831,18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96L91.831,18.959 L91.831,18.959z"></path>
+            <path fill="#FFFFFF" d="M129.417,2.482h27.594c20.844,0,38.016,16.377,38.016,37.419c0,21.041-17.271,37.42-38.016,37.42h-27.594 V2.482z M148.872,60.846h4.367c11.612,0,21.539-6.352,21.539-20.942c0-13.4-8.834-20.943-21.341-20.943h-4.565V60.846z"></path>
+            <path fill="#FFFFFF" d="M286.873,38.513c0,24.219-17.371,41.292-41.394,41.292c-24.02,0-41.391-17.071-41.391-41.292 C204.089,15.881,223.941,0,245.479,0C267.019,0,286.873,15.881,286.873,38.513z M224.339,38.612 c0,12.905,9.529,22.333,21.141,22.333c11.613,0,21.144-9.43,21.144-22.333c0-10.323-9.526-19.752-21.144-19.752 C233.867,18.86,224.339,28.29,224.339,38.612z"></path>
+            <path fill="#FFFFFF" d="M297.238,2.482h19.454l35.636,45.757h0.196V2.482h19.453v74.839h-19.453L316.89,31.465h-0.197v45.856 h-19.454V2.482z"></path>
+            <path fill="#FFFFFF" d="M407.345,64.319l-5.16,13.002h-20.646l28.785-74.839h21.242l28.188,74.839h-20.745l-4.862-13.002H407.345z M420.945,25.609h-0.199l-8.039,23.824h16.178L420.945,25.609z"></path>
           </g>
         </svg>
+      </div>
       </div>
       <section class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <h3 class="feedback__label">Оставьте свой отзыв</h3>
         <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__wrapper form__wrapper--introduce">
-            <h3 class="form__label form__label--introduce">Представьтесь:</h3>
-            <p class="form__area">
-              <label class="introduce" for="name">Имя*:</label>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Петр">
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback__form--introduce">
+            <h3 class="feedback__label">Представьтесь:</h3>
+            <p>
+              <label for="name">Имя*:</label>
+              <input type="text" name="name" id="name" placeholder="Петр">
             </p>
-            <p class="form__area">
-              <label class="introduce" for="surname">Фамилия*:</label>
-              <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов">
+            <p>
+              <label for="surname">Фамилия*:</label>
+              <input type="text" name="surname" id="surname" placeholder="Иванов">
             </p>
-            <p class="form__area">
-              <label class="introduce" for="middlename">Отчество:</label>
-              <input class="form__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+            <p>
+              <label for="middlename">Отчество:</label>
+              <input name="middlename" id="middlename" placeholder="Александрович">
             </p>
           </div>
-          <div class="form__wrapper form__wrapper--contacts">
-            <h3 class="form__label form__label--information"><span>Контактная информация:</span></h3>
-            <p class="form__area form__area--phone">
+          <div class="feedback__form--contacts">
+            <h3 class="feedback__label"><span>Контактная информация:</span></h3>
+            <p>
               <label for="phone-number"><span class="hide">Контактный</span> телефон*:</label>
-              <input class="form__input form__input--phone" type="text" name="number" id="phone-number" placeholder="Введите телефон">
+              <input  type="text" name="number" id="phone-number" placeholder="Введите телефон">
             </p>
-            <p class="form__area form__area--mail">
+            <p>
               <label for="email">Электронная почта*:</label>
-              <input class="form__input form__input--mail" type="email" name="email" id="email" placeholder="Введите e-mail">
+              <input type="email" name="email" id="email" placeholder="Введите e-mail">
             </p>
           </div>
-          <div class="form__wrapper form__wrapper--impressions">
-            <h3 class="form__label form__label--impressions">Ваше общее впечатление:</h3>
-            <p class="form__area form__area--radio radio">
-              <input class="radio__button visually-hidden" type="radio" name="impresion" id="radio-1">
+          <div class="feedback__form--impressions">
+            <h3 class="feedback__label">Ваше общее впечатление:</h3>
+            <p>
+              <input class="visually-hidden" type="radio" name="impresion" id="radio-1">
               <label class="radio__label" for="radio-1">Скорее положительное</label>
             </p>
-            <p class="form__area form__area--radio radio">
-              <input class="radio__button visually-hidden" type="radio" name="impresion" id="radio-2">
+            <p>
+              <input class="visually-hidden" type="radio" name="impresion" id="radio-2">
               <label class="radio__label" for="radio-2">Скорее отрицательное</label>
             </p>
-            <p class="form__area form__area--radio radio">
-              <input class="radio__button visually-hidden" type="radio" name="impresion" id="radio-3">
+            <p>
+              <input class="visually-hidden" type="radio" name="impresion" id="radio-3">
               <label class="radio__label" for="radio-3">Затрудняюсь ответить</label>
             </p>
           </div>
-          <div class="form__wrapper form__wrapper--places">
-            <h3 class="form__label form__label--places"><span>Посещенные достопримечательности:</span></h3>
-            <div class="checkbox__wrapper">
-              <p class="form__area form__area--checkbox checkbox">
-                <input class="checkbox visually-hidden" type="checkbox" id="check-1">
-                <label class="checkbox__label" for="check-1">Мост Дьявола</label>
+          <div class="feedback__form--places">
+            <h3 class="feedback__label"><span>Посещенные достопримечательности:</span></h3>
+            <div>
+              <p>
+              <input class="visually-hidden" type="checkbox" id="check-1">
+              <label for="check-1">Мост Дьявола</label>
               </p>
-              <p class="form__area form__area--checkbox checkbox">
-                <input class="checkbox visually-hidden" type="checkbox" id="check-2">
-                <label class="checkbox__label" for="check-2">Гора-Колокол</label>
+              <p>
+              <input class="visually-hidden" type="checkbox" id="check-2">
+              <label for="check-2">Гора-Колокол</label>
               </p>
-              <p class="form__area form__area--checkbox checkbox">
-                <input class="checkbox visually-hidden" type="checkbox" id="check-3">
-                <label class="checkbox__label" for="check-3">Слайд-парк</label>
+              <p>
+              <input class="visually-hidden" type="checkbox" id="check-3">
+              <label for="check-3">Слайд-парк</label>
               </p>
-              <p class="form__area form__area--checkbox checkbox">
-                <input class="checkbox visually-hidden" type="checkbox" id="check-4">
-                <label class="checkbox__label" for="check-4">Красные скалы</label>
+              <p>
+              <input class="visually-hidden" type="checkbox" id="check-4">
+              <label for="check-4">Красные скалы</label>
               </p>
             </div>
           </div>
-          <div class="form__wrapper form__wrapper--emotions">
-            <h3 class="form__label form__label--emotions"><span>Опишите свои эмоции:</span></h3>
-            <p class="form__area form__area--text text">
-              <textarea class="text__input" name="text" rows="8" cols="80" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="feedback__form--emotions">
+            <h3 class="feedback__label"><span>Опишите свои эмоции:</span></h3>
+            <p>
+              <textarea name="text" rows="8" cols="80" aria-label="Текст отзыва" placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
-            <div class="form__wrapper form__wrapper--submit">
-              <button class="form__submit" type="submit">Отправить отзыв</button>
-              <p class="form__description">* - обязательные поля</p>
+            <div class="feedback__wrapper feedback__wrapper--submit">
+              <button class="feedback__submit" type="submit">Отправить отзыв</button>
+              <p>* - обязательные поля</p>
             </div>
           </div>
         </form>
@@ -146,12 +147,10 @@
       <ul class="page-footer__social-links footer-list">
         <li class="footer-list__item">
           <a class="footer-list__link footer-list__link--twitter " href="#" aria-label="Твиттер">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
-              xml:space="preserve">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
                 <g>
-                  <path  fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"></path>
                 </g>
               </g>
             </svg>
@@ -159,18 +158,15 @@
         </li>
         <li class="footer-list__item">
           <a class="footer-list__link footer-list__link--facebook" href="#" aria-label="Фэйсбук">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
-              xml:space="preserve">
-              <path
-                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
             </svg>
           </a>
         </li>
         <li class="footer-list__item">
           <a class="footer-list__link footer-list__link--youtube" href="#" aria-label="Ютуб">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
-              xml:space="preserve">
-              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
             </svg>
           </a>
         </li>
@@ -179,22 +175,23 @@
         <p class="page-footer__description">Разработано</p>
         <p class="page-footer__academy-logo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27px" height="34px">
-          <path fill="hsl(0, 0%, 0%)"
-            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          <path fill="hsl(0, 0%, 0%)" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
           </svg>
         </p>
       </div>
     </footer>
-    <div class="wrong ">
-      <h3 class="wrong__label">Что-то пошло не так!</h3>
-      <p class="wrong__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="wrong__button" type="button" name="button">Ok</button>
-    </div>
-    <div class="success">
-      <h3 class="success__label">Ваш отзыв отправлен!</h3>
-      <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="success__wrapper">
-        <button class="success__button" type="button" name="button">Закрыть окно</button>
+    <div class="popup">
+      <div class="popup__wrong wrong">
+        <h3 class="wrong__label">Что-то пошло не так!</h3>
+        <p class="wrong__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="wrong__button" type="button" name="button">Ok</button>
+      </div>
+      <div class="popup__success success">
+        <h3 class="success__label">Ваш отзыв отправлен!</h3>
+        <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="success__wrapper">
+          <button class="success__button" type="button" name="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>
