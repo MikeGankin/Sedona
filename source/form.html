@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -48,7 +48,8 @@
       </div>
     </header>
     <main>
-      <div class="main-picture__wraper main-picture__wraper--small">
+      <div class="main-picture">
+        <div class="main-picture__wraper main-picture__wraper--small">
         <svg class="main-picture__slogan main-picture__slogan--small" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
           <g>
             <path fill="#FFFFFF" d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z"></path>
@@ -59,6 +60,7 @@
             <path fill="#FFFFFF" d="M407.345,64.319l-5.16,13.002h-20.646l28.785-74.839h21.242l28.188,74.839h-20.745l-4.862-13.002H407.345z M420.945,25.609h-0.199l-8.039,23.824h16.178L420.945,25.609z"></path>
           </g>
         </svg>
+      </div>
       </div>
       <section class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
@@ -178,16 +180,18 @@
         </p>
       </div>
     </footer>
-    <div class="wrong ">
-      <h3 class="wrong__label">Что-то пошло не так!</h3>
-      <p class="wrong__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="wrong__button" type="button" name="button">Ok</button>
-    </div>
-    <div class="success">
-      <h3 class="success__label">Ваш отзыв отправлен!</h3>
-      <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="success__wrapper">
-        <button class="success__button" type="button" name="button">Закрыть окно</button>
+    <div class="popup">
+      <div class="popup__wrong wrong">
+        <h3 class="wrong__label">Что-то пошло не так!</h3>
+        <p class="wrong__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="wrong__button" type="button" name="button">Ok</button>
+      </div>
+      <div class="popup__success success">
+        <h3 class="success__label">Ваш отзыв отправлен!</h3>
+        <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="success__wrapper">
+          <button class="success__button" type="button" name="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>
