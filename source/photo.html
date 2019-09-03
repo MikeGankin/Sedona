@@ -31,7 +31,7 @@
       </nav>
       <div class="header-wrapper">
         <h1 class="header-wrapper__lable visually-hidden">Седона</h1>
-        <picture class="header-wrapper__img">
+        <picture>
           <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
           <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
           <img src="img/logo-sedona-mobile.svg" alt="MDN">
@@ -71,11 +71,10 @@
           <li class="photo-gallery__item">
             <div class="photo-gallery__picture photo-gallery__picture--big">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp">
-                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp">
-                <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.webp" srcset="img/photo-sunset-mobile@2x.webp" alt="Закат солнца">
-              </picture>
-              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp">
+                <source class="photo-gallery__image" type="image/webp" src="img/photo-sunset-mobile@1x.webp" srcset="img/photo-sunset-mobile@2x.webp" alt="Закат солнца">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
                 <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Закат солнца">
@@ -105,11 +104,10 @@
           <li class="photo-gallery__item">
             <div class="photo-gallery__picture">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp">
-                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp">
-                <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.webp" srcset="img/photo-cactus-mobile@2x.webp" alt="Кактус">
-              </picture>
-              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp">
+                <source class="photo-gallery__image" type="image/webp" src="img/photo-cactus-mobile@1x.webp" srcset="img/photo-cactus-mobile@2x.webp" alt="Кактус">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
                 <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Кактус">
@@ -139,12 +137,11 @@
           <li class="photo-gallery__item">
             <div class="photo-gallery__picture">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp">
-                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp">
-                <img class="photo-gallery__image" src="img/photo-roads-mobile@1x.webp" srcet="img/photo-roads-mobile@2x.webp" alt="Дорога на север">
-              </picture>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg img/photo-roads-desktop@2x.jpg">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp">
+                <source class="photo-gallery__image" type="image/webp" src="img/photo-roads-mobile@1x.webp" srcet="img/photo-roads-mobile@2x.webp" alt="Дорога на север">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
                 <img class="photo-gallery__image" src="img/photo-roads-mobile@1x.jpg" srcet="img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
               </picture>
@@ -173,11 +170,10 @@
           <li class="photo-gallery__item">
             <div class="photo-gallery__picture">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp">
-                <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.webp" srcet="img/photo-bridge-mobile@2x.webp" alt="Мост">
-              </picture>
-              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp">
+                <source class="photo-gallery__image" type="image/webp" src="img/photo-bridge-mobile@1x.webp" srcet="img/photo-bridge-mobile@2x.webp" alt="Мост">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
                 <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcet="img/photo-bridge-mobile@2x.jpg" alt="Мост">
@@ -212,11 +208,10 @@
         <p class="video-gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-gallery__wrapper">
           <picture>
-            <source srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp" media="(min-width: 1200px)">
-            <source srcset="img/video-tablet@1x.webp, img/video-tablet@2x.webp" media="(min-width: 768px)">
-            <img src="img/video-mobile@1x.webp" srcet="img/video-mobile@2x.webp" alt="Видео о городе">
-          </picture>
-          <picture>
+            <source type="image/webp" srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp" media="(min-width: 1200px)">
+            <source type="image/webp" srcset="img/video-tablet@1x.webp, img/video-tablet@2x.webp" media="(min-width: 768px)">
+            <source type="image/webp" src="img/video-mobile@1x.webp" srcet="img/video-mobile@2x.webp" alt="Видео о городе">
+        
             <source srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg" media="(min-width: 1200px)">
             <source srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg" media="(min-width: 768px)">
             <img src="img/video-mobile@1x.jpg" srcet="img/video-mobile@2x.jpg" alt="Видео о городе">
